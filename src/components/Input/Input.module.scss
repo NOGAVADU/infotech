@@ -1,0 +1,11 @@
+.label{
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.input{
+  font-size: var(--main-font-size);
+  padding: 0.2rem 0.5rem;
+  border: 1px solid black;
+}

@@ -1,0 +1,18 @@
+.item{
+
+}
+
+.link{
+  white-space: nowrap;
+  color: #fff;
+
+  transition: color .15s ease-in-out;
+
+  &:hover {
+    color: #000;
+  }
+}
+
+.active {
+  color: #000;
+}

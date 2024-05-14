@@ -1,0 +1,4 @@
+.accent {
+    font-size: var(--main-font-size);
+    font-weight: var(--font-weight-bold);
+}

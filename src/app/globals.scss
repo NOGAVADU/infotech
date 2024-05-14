@@ -1,0 +1,49 @@
+:root {
+  --accent-color-light: #72b222;
+  --accent-color-dark: #497a43;
+  --accent-color-medium: #5c8d35;
+  --text-color-main: #666;
+  --main-font-size: 16px;
+  --title-font-size: 22px;
+  --small-font-size: 12px;
+  --accent-font-size: 19px;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.25)
+}
+
+body {
+  display: grid;
+  grid-template: auto 1fr auto / 1fr;
+  font-size: var(--main-font-size);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-color-main);
+}
+
+main{
+  width: 100%;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  gap: 2rem;
+}
+
+@media (width <= 768px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+b {
+  font-weight: var(--font-weight-bold);
+}
+

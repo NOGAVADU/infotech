@@ -1,0 +1,49 @@
+.aside {
+  flex: 0 0 200px;
+
+  &__list {
+
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    height: 60px;
+    padding: .5rem;
+    width: 100%;
+    color: #000;
+    border-bottom: 1px dashed var(--accent-color-dark);
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+      background: var(--accent-color-dark);
+      color: #fff;
+    }
+  }
+
+  &__icon{
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.active {
+  background: var(--accent-color-dark);
+  color: #fff;
+}
+
+@media (width <=768px) {
+  .aside{
+    display: none;
+  }
+}

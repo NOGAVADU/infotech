@@ -1,0 +1,62 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  margin: 3rem auto;
+  min-height: 330px;
+  background: url("../../../public/banner.png") center no-repeat;
+  background-size: contain;
+  max-width: 1340px;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+
+  &__subtitle {
+    font-size: var(--main-font-size);
+    font-weight: var(--font-weight-regular);
+    color: var(--accent-color-dark);
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__text {
+    font-size: var(--accent-font-size);
+    color: #000;
+    font-style: normal;
+  }
+
+  &__link {
+    color: var(--accent-color-dark);
+  }
+}
+
+.text_big {
+  font-weight: var(--font-weight-bold);
+  font-size: 36px;
+}
+
+.text_light {
+  color: var(--accent-color-light);
+}
+
+@media (width <= 768px) {
+  .container{
+    background-size: cover;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .logo{
+    filter: drop-shadow(2px 2px 10px #ffffff);
+  }
+  .contacts{
+    display: none;
+  }
+}
