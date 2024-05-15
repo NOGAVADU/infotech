@@ -19,8 +19,8 @@ export async function POST(req: Request) {
         }
     );
 
-    const mailer = (message) => {
-        transporter.sendMail(message, (err, info) => {
+    const mailer = (message: any) => {
+        transporter.sendMail(message, (err: any, info: any) => {
             if (err) return console.log(err)
             console.log("Email sent: ", info)
         })

@@ -24,7 +24,7 @@ const Modal: FC<ModalProps> = ({children, isActive = false, setActive}) => {
         window.addEventListener('keydown', keyHandle)
 
         return () => window.removeEventListener('keydown', keyHandle)
-    }, [])
+    }, [setActive])
 
     return (
         <div className={[styles.modal, isActive ? styles.active : ""].join(" ")}
