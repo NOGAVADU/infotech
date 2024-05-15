@@ -17,8 +17,9 @@ const Modal: FC<ModalProps> = ({children, isActive = false, setActive}) => {
 
     useEffect(() => {
         const keyHandle = (e: KeyboardEvent) => {
-            if (e.key === 'Escape') closeModal()
+            if (e.key === 'Escape') setActive(false)
         }
+
 
         window.addEventListener('keydown', keyHandle)
 
