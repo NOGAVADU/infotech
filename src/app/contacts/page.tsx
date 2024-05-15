@@ -22,8 +22,8 @@ const Page = () => {
             </Text>
             <Text>
                 <Subtitle>Отмечено на карте:</Subtitle>
-                <Paragraph>ООО "ИнфоТех" Офис</Paragraph>
-                <Paragraph>ООО "ИнфоТех" Производство и склад</Paragraph>
+                <Paragraph>ООО &quot;ИнфоТех&quot; Офис</Paragraph>
+                <Paragraph>ООО &quot;ИнфоТех&quot; Производство и склад</Paragraph>
             </Text>
         </main>
     );
